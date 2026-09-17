@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DigiKeyboard LATAM</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <h1>DigiKeyboard LATAM</h1>
+
+            <p>
+                Convierte texto en código DigiKeyboard para teclados
+                en español latinoamericano.
+            </p>
+        </header>
+
+
+        <!-- ================================ -->
+        <!-- TEXTO DE ENTRADA -->
+        <!-- ================================ -->
+
+        <section class="editor-section">
+
+            <label for="inputText">
+                Texto
+            </label>
+
+            <textarea
+                id="inputText"
+                placeholder="Escribe o pega aquí el texto que quieres que escriba tu DigiKeyboard..."
+            ></textarea>
+
+        </section>
+
+
+        <!-- ================================ -->
+        <!-- BOTÓN GENERAR -->
+        <!-- ================================ -->
+
+        <button id="generateButton" class="generate-button">
+            Generar código
+        </button>
+
+
+        <!-- ================================ -->
+        <!-- CÓDIGO GENERADO -->
+        <!-- ================================ -->
+
+        <section class="editor-section output-section">
+
+            <label for="outputCode">
+                Código DigiKeyboard
+            </label>
+
+            <div class="code-container">
+
+                <pre id="highlightedCode"><code></code></pre>
+
+                <textarea
+                    id="outputCode"
+                    readonly
+                    wrap="off"
+                    spellcheck="false"
+                    placeholder="Aquí aparecerá el código generado..."
+                ></textarea>
+
+                <button
+                    id="copyButton"
+                    class="copy-button"
+                    title="Copiar código"
+                    aria-label="Copiar código"
+                >
+                    ⧉
+                </button>
+
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="latam.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
